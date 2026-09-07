@@ -1,0 +1,11 @@
+*{
+    font-family: sans-serif;
+}
+
+.colored-header {
+    background-color: beige;
+} 
+
+.colored-footer {
+    background-color: blanchedalmond;
+}
