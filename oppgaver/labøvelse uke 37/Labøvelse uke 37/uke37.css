@@ -1,11 +1,70 @@
+/* Globale silregler*/
+
 *{
-    font-family: sans-serif;
+    box-sizing: border-box;
 }
 
-.colored-header {
-    background-color: beige;
-} 
+body{
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #c8ccd3;
+    color: #313235;
+}
 
-.colored-footer {
+/* Header og navigasjon */
+
+header{
+    background-color: #1e3a5f;
+    padding: 2rem 1rem;
+    /*padding: 1rem 2rem 3rem 4rem;*/
+    /*padding-top: 1rem;
+    padding-bottom: 2rem;
+    padding-left: 3rem;
+    padding-right: 10rem;*/
+    color: rgb(255, 255, 255);
+
+        p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    }
+
+    nav{
+        ul{
+            list-style: none;
+            li{
+                display: inline-block;
+                margin: 20px; 
+                a{
+                    color: #ffffff;
+                    text-decoration: none;
+                    font-weight: bold;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*header p {
+font-size: 1.5rem;
+font-weight: bold;
+letter-spacing: 1px;
+}*/
+
+
+/* Hovedinnhold */
+
+main{
+    max-width: 900px;
+    margin: 32px auto;
+    padding: 0/*top og bottom*/ 1.5px/*left og right*/; 
+}
+
+/*footer*/
+
+footer {
     background-color: blanchedalmond;
 }
