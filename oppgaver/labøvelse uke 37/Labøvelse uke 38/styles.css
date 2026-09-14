@@ -1,0 +1,46 @@
+
+
+body{
+    font-family: 'Gill Sans', Arial, sans-serif;
+
+    h1 {
+        color: hsl(11, 100%, 60%);
+        font-size: 32px; 
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .p1 {
+        font-size: 2rem;
+    }
+
+    .p2 {
+        line-height: 1.6;
+    } 
+
+    .none {
+        text-decoration: none;
+
+    }
+    .boks1 {
+        background-color: cadetblue;
+    }
+    /* rbga opacity gjør at man kan se fargen inni boksen bedre */
+
+    .boks2 {
+        background-color: #ff5733;
+        background-image: url("https://picsum.photos/400/200");
+        background-size: cover;
+        background-size: contain;
+    }
+    
+    .boks3 {
+        background-color: rgb(255, 0, 34);
+        text-transform: uppercase;
+    }
+}
+
+
+
+
+
