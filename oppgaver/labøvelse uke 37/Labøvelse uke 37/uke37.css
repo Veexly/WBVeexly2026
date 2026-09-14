@@ -63,8 +63,88 @@ main{
     padding: 0/*top og bottom*/ 1.5px/*left og right*/; 
 }
 
-/*footer*/
+article{
+    background-color: #ffffff;
+    border: 1px #dde3ea solid;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    padding: 1rem 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+
+    h2{
+        margin-top: 0;
+        color: #1e3a5f; 
+    }
+}
+
+aside{
+    section{
+        background-color: #ffffff;
+        border: 1px solid #dde3ea;
+        border-radius: 0.5rem;
+        margin-bottom: 1rem;
+        padding: 1rem 20px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        
+    }
+    h3{
+        margin-top: 0;
+        color: #1e3a5f;
+        border-bottom: 2px solid #dde3ea;
+        padding: 1rem 1.5;
+        margin-bottom: 20px;
+    }
+}
+
+
+/*footer og kontaktskjema*/
 
 footer {
-    background-color: blanchedalmond;
+    background-color: #1e3a5f;
+    color: #ffffff;
+    padding: 1rem;
+    margin-top: 2rem;
+
+    label{
+        margin: 0 0 4px;
+        font-weight: bold;
+        display: block;
+        margin-top: 12px;
+    }
+
+    legend{
+        font-weight: bold;
+    }
+
+    form{
+        margin-top: 1rem;
+        max-width: 400px;
+    }
+
+    input{
+        width: 100%;
+        padding: .5rem;
+        margin-top: 4px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        background-color: #ffffff;
+    }
+}
+
+/* Tabell */
+
+table{
+    width: 100%;
+    background-color: #ffffff;
+    box-sizing: o 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+th, td{
+    padding: 0.5rem 1rem 0;
+    text-align: left;
+    border-bottom: 1px solid #dde3ea;
+}
+
+tbody tr:nth-child(even){
+    background-color: #555f6e;
 }
