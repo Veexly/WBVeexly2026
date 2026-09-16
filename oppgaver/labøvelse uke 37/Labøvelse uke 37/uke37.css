@@ -23,18 +23,23 @@ header{
     padding-right: 10rem;*/
     color: rgb(255, 255, 255);
 
-        p {
+
+    span {
     font-size: 1.5rem;
     font-weight: bold;
     letter-spacing: 1px;
     }
 
     nav{
+        
+        
         ul{
             list-style: none;
+            display: flex;
+            justify-content: space-evenly;
+            gap: 1rem;
             li{
-                display: inline-block;
-                margin: 20px; 
+                 
                 a{
                     color: #ffffff;
                     text-decoration: none;
@@ -58,12 +63,42 @@ letter-spacing: 1px;
 /* Hovedinnhold */
 
 main{
-    max-width: 900px;
+    max-width: 75vw;
     margin: 32px auto;
     padding: 0/*top og bottom*/ 1.5px/*left og right*/; 
+
+    &:not(:has(table)){
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "sidepanel hovedinnhold";
+        gap: 1rem;
+        align-items: start;
+        /* grid-auro-flow: column; */
+    }
+
+
+    .hovedinnhold {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-area: hovedinnhold;
+
+        /* grid-column: 2/3 */
+
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 1rem;
+    }
+
+    .sidepanel {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-area: sidepanel;
+    }
 }
 
 article{
+   
+
     background-color: #ffffff;
     border: 1px #dde3ea solid;
     border-radius: 0.5rem;
