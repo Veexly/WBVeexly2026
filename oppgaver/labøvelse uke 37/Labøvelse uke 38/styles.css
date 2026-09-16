@@ -22,6 +22,7 @@ body{
         text-decoration: none;
 
     }
+    
     .boks1 {
         background-color: cadetblue;
     }
@@ -32,6 +33,7 @@ body{
         background-image: url("https://picsum.photos/400/200");
         background-size: cover;
         background-size: contain;
+        /*bildet repeteres flere ganger*/
     }
     
     .boks3 {
@@ -39,8 +41,4 @@ body{
         text-transform: uppercase;
     }
 }
-
-
-
-
 
