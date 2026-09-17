@@ -1,0 +1,155 @@
+/* Grunnstiler - ikke rør disse, de er bare for å gjøre boksene synlige */
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 20px;
+	color: #222831;
+}
+h1 {
+	margin-top: 0;
+}
+h2 {
+	border-bottom: 2px solid #cbd5e0;
+	padding-bottom: 6px;
+	margin-top: 3rem;
+}
+p.mal {
+	background: #eef4fb;
+	border-left: 4px solid #1e3a5f;
+	padding: 10px 16px;
+	margin: 0.5rem 0 1.5rem;
+}
+.knapp {
+	padding: 10px 18px;
+	border: none;
+	border-radius: 6px;
+	background-color: #1e3a5f;
+	color: #ffffff;
+	font-weight: bold;
+	cursor: pointer;
+}
+.bilde {
+	height: 100px;
+	border-radius: 6px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #ffffff;
+	font-weight: bold;
+}
+.bilde:nth-child(1) {
+	background-color: #1e3a5f;
+}
+.bilde:nth-child(2) {
+	background-color: #4a6d8c;
+}
+.bilde:nth-child(3) {
+	background-color: #7c9cbf;
+}
+.bilde:nth-child(4) {
+	background-color: #9fc5e8;
+}
+.bilde:nth-child(5) {
+	background-color: #557a95;
+}
+.bilde:nth-child(6) {
+	background-color: #2b4c6f;
+}
+
+.side-layout > * {
+	background-color: #eef4fb;
+	border: 1px solid #cbd5e0;
+	border-radius: 6px;
+	padding: 12px;
+}
+
+/* --------------------------------------------------------
+Skriv CSS-en din for hver oppgave HER, under riktig
+overskrift. Du trenger ikke røre HTML-en.
+ -------------------------------------------------------- */
+/* Oppgave 1: Navigasjonsmeny (Flexbox) */
+
+.meny {
+
+    li {
+        display: flex; 
+        display: inline-block;
+        flex-direction: row;
+        justify-content: space-evenly; 
+
+        a{
+            text-decoration: none;
+            color: #1e3a5f; 
+            &:hover{
+                font-weight: bold;
+                text-decoration: underline;
+            }
+        }
+        
+    }
+}
+    
+
+/* Oppgave 2: Knapperad (Flexbox) */
+
+.knapperad {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Oppgave 3: Bildegalleri (Grid) */
+
+.galleri {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax (150px, 1fr));
+    gap: 1rem;
+}
+
+/* Oppgave 4: Sideoppsett (Grid) */
+
+.side-layout {
+    display: grid;
+    grid-template-areas: "navigasjon hovedinnhold sidepanel";
+    gap: 1rem;
+    align-items: start;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: repeat(1, 1fr 1fr 1fr);
+    grid-auto-flow: column;
+
+    
+
+    nav{
+        /* grid-column-start: 1;
+        grid-column-end: 2; */
+        grid-row: 1/2;
+        grid-area: navigasjon;
+    }
+
+    header {
+        /* grid-column-start: 2;
+        grid-column-end: 3; */
+        grid-row: 2/5;
+        grid-area: hovedinnhold;
+    }
+
+    main {
+     /*     grid-column-start: 2;
+        grid-column-end: 3; */
+        grid-row: 2/3;
+        grid-area: hovedinnhold;
+    }
+
+    footer {
+       /*  grid-column-start: 2;
+        grid-column-end: 4; */
+        grid-row: 3/4;
+        grid-area: hovedinnhold;
+    }
+
+    aside {
+        /* grid-column-start: 3;
+        grid-column-end: 4; */
+        grid-row: 1/2;
+        grid-area: sidepanel;
+    }
+}
